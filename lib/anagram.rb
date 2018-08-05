@@ -7,7 +7,6 @@ class Anagram
   def match(array_words)
       array_words.map do |word_a|
       word_a.scan(/\w/).sort == word.scan(/\w/).sort
-      word_a
      end
   end
 end
