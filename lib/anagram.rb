@@ -5,13 +5,13 @@ class Anagram
     @word = word
   end
   def match(array_words)
-
-        if array_words.map do |word_a|
-            word_a.scan(/\w/).sort == word.scan(/\w/).sort
-           word_a
-          end
-        else
-          []
-        end
+    anagrams = []
+     array_words.each do |word_a|
+          if  word_a.scan(/\w/).sort == word.scan(/\w/).sort
+              anagrams << word_a
+         else
+          anagrams.clear
+         end
+     end
   end
 end
