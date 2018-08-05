@@ -9,7 +9,7 @@ class Anagram
          word_a.scan(/\w/).sort == word.scan(/\w/).sort
        end
       else
-        []   
+        []
      end
   end
 end
