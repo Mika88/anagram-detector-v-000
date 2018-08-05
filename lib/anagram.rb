@@ -9,7 +9,7 @@ class Anagram
         if array_words.map do |word_a|
             word_a.scan(/\w/).sort == word.scan(/\w/).sort
            word_a
-          end      
+          end
         else
           []
         end
