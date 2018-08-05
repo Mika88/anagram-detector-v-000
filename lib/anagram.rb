@@ -8,7 +8,7 @@ class Anagram
     anagrams = []
        array_words.each do |word_a|
          if word_a.split(" ").sort == word.split(" ").sort
-            anagrams << word_a   
+            anagrams << word_a
         else
         anagrams.clear
       end
